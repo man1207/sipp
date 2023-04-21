@@ -74,6 +74,15 @@ docker build -t sipp-build -f docker/Dockerfile docker
 docker run --rm -v $PWD:/src sipp-build
 ```
 
+## Docker image
+
+To build a docker image, run next command from command line
+You can point ALPINE_VERSION as build argument (default is 3.13)
+
+```
+docker build --build-arg ALPINE_VERSION=3.14 -t sipp:latest .
+```
+
 # Support
 
 I try and be responsive to issues raised on Github, and there's [a
